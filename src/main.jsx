@@ -11,29 +11,37 @@ import ListedBooks from './Components/ListedBooks';
 import Read from './Components/Read';
 import About from './Components/About';
 import Community from './Components/Community';
+import Mainlayout from './Layouts/Mainlayout';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>
+    element: <Mainlayout></Mainlayout>,
+    children : [
+      {
+        path: "/",
+        element: <Home></Home>
+      },
+      {
+        path: "/listedbooks",
+        element: <ListedBooks></ListedBooks>
+      },
+      {
+        path: "/read",
+        element: <Read></Read>
+      },
+      {
+        path: "/about",
+        element: <About></About>
+      },
+      {
+        path: "/community",
+        element: <Community></Community>
+      }
+    ]
   },
-  {
-    path: "/listedbooks",
-    element: <ListedBooks></ListedBooks>
-  },
-  {
-    path: "/read",
-    element: <Read></Read>
-  },
-  {
-    path: "/about",
-    element: <About></About>
-  },
-  {
-    path: "/community",
-    element: <Community></Community>
-  }
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
