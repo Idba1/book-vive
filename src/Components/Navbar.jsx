@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100 shadow-lg">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,10 +24,10 @@ const Navbar = () => {
                             isActive ? 'text-[#23BE0A]' : 'text-black'} to={"/community"}>Community</NavLink>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <a className="btn btn-ghost text-base font-bold lg:text-2xl">Book Vibe</a>
                 </div>
                 <div className="navbar-center hidden lg:flex ">
-                    <ul className="menu menu-horizontal px-1 gap-5 font-semibold text-lg">
+                    <ul className="menu menu-horizontal px-1 gap-7 font-semibold text-lg">
                         <NavLink
                             className={({ isActive }) =>
                                 isActive ? 'text-[#23BE0A]' : 'text-black'}
@@ -43,8 +43,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-1 lg:gap-3">
-                    <a className="btn">Sign In</a>
-                    <a className="btn">Log In</a>
+                    <a className="btn text-base lg:font-bold">Sign In</a>
+                    <a className="lg:btn hidden lg:text-base lg:font-bold">Log In</a>
                 </div>
             </div>
         </div>
