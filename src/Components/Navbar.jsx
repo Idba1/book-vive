@@ -30,7 +30,7 @@ const Navbar = () => {
                         <li><a>Community</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end gap-3">
+                <div className="navbar-end gap-1 lg:gap-3">
                     <a className="btn">Sign In</a>
                     <a className="btn">Log In</a>
                 </div>
