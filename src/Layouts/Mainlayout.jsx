@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
-import About from "../Components/About";
-import Community from "../Components/Community";
-import ListedBooks from "../Components/ListedBooks";
+// import About from "../Components/About";
+// import Community from "../Components/Community";
+// import ListedBooks from "../Components/ListedBooks";
 import Navbar from "../Components/Navbar";
-import Read from "../Components/Read";
-import Home from "../Pages/Home";
+// import Read from "../Components/Read";
+// import Home from "../Pages/Home";
 
 const Mainlayout = () => {
     return (
