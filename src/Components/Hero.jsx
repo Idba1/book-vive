@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Book from "./Book";
 
 const Hero = () => {
     return (
@@ -15,7 +16,9 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
+            <Book></Book>
         </div>
+        
     );
 };
 
