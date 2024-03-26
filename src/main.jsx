@@ -12,6 +12,7 @@ import Read from './Components/Read';
 import About from './Components/About';
 import Community from './Components/Community';
 import Mainlayout from './Layouts/Mainlayout';
+import BookDetails from './Pages/BookDetails';
 
 
 const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/community",
         element: <Community></Community>
+      },
+      {
+        path: "/book-details/:bookId",
+        element: <BookDetails></BookDetails>
       }
     ]
   },
