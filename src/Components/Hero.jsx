@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import Book from "./Book";
+// import Book from "./Book";
+import AllBooks from "./AllBooks";
 
 const Hero = () => {
     return (
@@ -16,7 +17,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <Book></Book>
+            <AllBooks></AllBooks>
         </div>
         
     );
