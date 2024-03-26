@@ -9,7 +9,7 @@ const Book = ({ book }) => {
             <div className=" rounded-xl">
 
                 <article className="lg:p-10 flex flex-col ">
-                    <Link to={`/book-details/:${bookId}`}>
+                    <Link to={`/book-details/${bookId}`}>
                         <div className='bg-[#F3F3F3] py-10 px-5  rounded-xl'>
                             <img alt="" className="object-cover w-fit mx-auto h-40 rounded-lg justify-center items-center " src={image} />
                         </div>
