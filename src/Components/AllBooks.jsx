@@ -15,6 +15,11 @@ const AllBooks = () => {
 
     return (
         <div>
+            <div className="space-y-2 text-center">
+                <h2 className="text-3xl font-bold">Books</h2>
+            </div>
+
+            <div className="grid grid-cols-3">
             {
                 books.map((book) =>
                 (<Book key={book.id}
@@ -22,6 +27,7 @@ const AllBooks = () => {
                 ></Book>
                 ))
             }
+            </div>
         </div>
     );
 };
